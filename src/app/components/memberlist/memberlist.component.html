@@ -1,0 +1,60 @@
+
+<app-auth-content>
+   
+      <div class="app-title">
+          <div>
+            <h1><i class="fa fa-dashboard"></i>รายการสมาชิก</h1>
+            <p>Start a beautiful journey here</p>
+          </div>
+          <ul class="app-breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+            <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tile">
+              <div class="tile-body">
+        <div class="row">
+          <div class="col-12 table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                 
+                 
+                  <th>ชื่อ-นามสกุล</th>
+                  <th>ชื่อผู้ใช้</th>
+                  <th>อีเมลล์</th>
+                  <th>เบอร์โทร</th>
+                  <th>อายุ</th>
+                 
+                  <th>จัดการ</th>
+                
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let member of members">
+                    
+                
+                <td>{{member.name}}    {{member.lastname}}</td>
+                <td>{{member.username}}</td>
+                <td>{{member.email}}</td>
+                <td>{{member.phone}}</td>
+                <td>{{member.date}}</td>
+                <td>
+                  <!-- <button type="button" (click)="editDetailUser(data)" >Edit</button>
+                    <button type="button" (click)="delDetailUser(data)" >Delete</button> -->
+                 </td>
+  
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  </app-auth-content>
+  

@@ -1,0 +1,60 @@
+
+<app-auth-content>
+  <div class="app-title">
+    <div>
+      <h1><i class="fa fa-dashboard"></i>Farm</h1>
+      <p>Start a beautiful journey here</p>
+    </div>
+    <ul class="app-breadcrumb breadcrumb">
+      <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+      <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tile">
+        <div class="tile-body">
+          <div class="row">
+            <div class="col-12 table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                  
+                    <th>เจ้าของฟาร์ม</th>
+                    <th>ชื่อแปลง</th>
+                    <th>ขนาด/พื้นที่</th>
+                    <th>วันที่เริ่มปลูก</th>
+                    <th>ตำบล</th>
+                    <th>อำเภอ</th>
+                    <th>จังหวัด</th>
+                    <th>ACTION</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let farm of farms">
+                      
+                  <td>{{farm.farmOwner}}</td>
+                  <td>{{farm.farmname}}</td>
+                  <td>{{farm.size}}</td>
+                  <td>{{farm.dateGrowth}}</td>
+                 
+                  <td>{{farm.subDistrictThai}}</td>
+                  <td>{{farm.subDistrictThai}}</td>
+                  <td>{{farm.provinceThai}}</td>
+                  
+                  <td>
+                    <!-- <button type="button" (click)="editDetailFarm(data)" >Edit</button>
+                      <button type="button" (click)="delDetailFarm(data)" >Delete</button> -->
+                   </td>
+               
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-auth-content>

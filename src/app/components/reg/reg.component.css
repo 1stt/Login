@@ -1,0 +1,7 @@
+.login-box{
+    min-height: 600px;
+    margin-bottom: 15px;
+}
+.ng-invalid.ng-touched{
+    border-color: orangered;
+}

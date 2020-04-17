@@ -1,0 +1,61 @@
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+  <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+    <div>
+      <p class="app-sidebar__user-name">John Doe</p>
+      <p class="app-sidebar__user-designation">Frontend Developer</p>
+    </div>
+  </div>
+  <ul class="app-menu">
+    <li class="treeview" routerLinkActive = "is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview" ><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">สมาชิก</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" routerLink="/memberlist" routerLinkActive="active"><i class="icon fa fa-circle-o"></i>รายการสมาชิก</a></li>
+        <li><a class="treeview-item" routerLink="/membercreate" routerLinkActive="active"><i class="icon fa fa-circle-o"></i>เพิ่มสมาชิก</a></li>
+      </ul>
+    </li>
+
+    <li class="treeview" routerLinkActive = "is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview" >
+      <i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">ฟาร์ม</span>
+      <i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" routerLink="/farmlist" routerLinkActive="active"><i class="icon fa fa-circle-o"></i>รายการฟาร์ม</a></li>
+        <li><a class="treeview-item" routerLink="/farmcreate" routerLinkActive="active"><i class="icon fa fa-circle-o"></i>เพิ่มฟาร์ม</a></li>
+      </ul>
+    </li>
+    
+     <li><a class="app-menu__item" routerLink="/upload" routerLinkActive="active">
+      <i class="app-menu__icon fa fa-laptop"></i>
+      <span class="app-menu__label">อัพโหลดรูปภาพ</span></a>
+    </li>
+
+     <!-- <li><a class="app-menu__item" [routerLink]="['/',AppURL.Authen,AuthURL.Download]" routerLinkActive="active" >
+      <i class="app-menu__icon fa fa-pie-chart"></i>
+      <span class="app-menu__label">ฟาร์ม</span></a>
+    </li> -->
+
+  
+
+     <li><a class="app-menu__item" routerLink="/process" routerLinkActive="active">
+      <i class="app-menu__icon fa fa-edit"></i>
+      <span class="app-menu__label">ประมวลผลภาพ</span></a>
+      </li>
+
+     <li><a class="app-menu__item " routerLink="/dashboard" routerLinkActive="active">
+      <i class="app-menu__icon fa fa-dashboard"></i>
+      <span class="app-menu__label">รายงานผลผลิต</span></a>
+    </li>
+
+    <li><a class="app-menu__item " routerLink="/test" routerLinkActive="active">
+      <i class="app-menu__icon fa fa-dashboard"></i>
+      <span class="app-menu__label">TestUrl</span></a>
+    </li>
+
+    <!-- <li><a class="app-menu__item " routerLink="/upload" routerLinkActive="active">
+      <i class="app-menu__icon fa fa-dashboard"></i>
+      <span class="app-menu__label">TestData</span></a>
+    </li> -->
+    
+    
+   </ul>
+</aside>

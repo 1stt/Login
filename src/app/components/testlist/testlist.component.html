@@ -1,0 +1,12 @@
+
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">List of Files</div>
+    <div *ngFor="let file of tests">
+      <div class="panel-body">
+        <app-testdetail [test]='file'></app-testdetail>
+      </div>
+    </div>
+  </div>
+
